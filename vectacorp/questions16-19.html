@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 646 Module 1 Assignment 01 Practise with Jquery Events</title>
+  <link href="styles/normalize.css" type="text/css" rel="stylesheet">
+  <link href="styles/styles.css" type="text/css" rel="stylesheet">
+  <script src="jquery-3.6.0.js"></script>
+<script src="node_modules/dist/jquery.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script>
+
+	$(document).ready(function () {
+
+//Number 16.
+
+        $('body').on({
+                click: function() {
+                    window.alert("This is the answer to Assignment question #16 using the alert method!");
+                }
+            }, '#button1');
+
+//Number 17.
+
+		$('#button2').bind('click', function () {
+                window.alert("Answer to Assignment Question #17 using the Bind method!");
+            });
+
+//Number 18.
+
+    		$('#button3').on('click', function () {
+                 window.alert("Answer to Assignement Question #18 using the On Method !");
+             });
+
+ //Number 19.
+
+    		$('#button4, #button5').on('click', function () {
+                 window.alert("Answer to Assignement Question #19 using the On Method For both 19-1 and 19-2!");
+             });
+
+            });
+
+
+//For answers to questions 20 -25 see .HTML files.
+
+	</script>
+</head>
+
+<body>
+<br>
+<br>
+	
+    <button id="button1">Question #16</button> 
+	<br><br>
+		
+    <button id="button2">Question #17</button> 
+	<br><br>
+
+	<button id="button3">Questions #18</button> 
+	<br><br>
+
+	<div id="div1">
+    <button id="button4">Question #19-1</button> 
+	<button id="button5">Question #19-2</button> 
+	</div>
+	
+
+	<br><br>
+        <label for="text">input box #24</label>
+		<input type="text" id='number24' name="number24" value="number24">
+<br><br>
+
+<form id="basic-form" action="" method="post">
+    <p>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+    </p>
+    <p>
+      <label for="email">E-Mail</label>
+      <input id="email" type="email" name="email" required>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="SUBMIT">
+    </p>
+</form>
+	
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 646 Module 1 Assignment 01 Practise with Jquery Events</title>
+  <link href="styles/normalize.css" type="text/css" rel="stylesheet">
+  <script src="jquery-3.6.0.js"></script>
+<script src="node_modules/dist/jquery.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  	<script>
+
+	$(document).ready(function () {
+
+		$('p').css('color', 'red')
+
+       		$('div').css('background-color', '#DFE3E6')
+                  .css('border', '1px solid #929CA4')
+
+			$('div').width('400px').height('400px')
+    		
+			$('body').bind({
+                mouseenter: function() {
+                    window.console.log('Cursor entered the div!');
+                },
+                mouseleave: function() {
+                    window.console.log('Cursor left the div!');
+                },
+                click: function() {
+                    window.alert('Cursor clicked the div!');
+                }
+            }, 'div');
+	 });
+
+	</script>
+</head>
+<body>
+
+	
+    <div>
+		<p>plain old div to mouseenter and mouseleave for Question #20.</p>
+	</div>
+	
+
+
+</body>
+
+</html>
